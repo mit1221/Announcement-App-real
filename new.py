@@ -1,2 +1,2 @@
 def helloThere(times: int):
-    print ("Hello" * times)
+    print ("Hello" * times + 1)
