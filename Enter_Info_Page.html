@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>LinkDeals</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/enterInfoPage.css">
+        <script src="enterInfo.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.0.0/firebase.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    </head>
+    
+    <body onload="loggedIn()">
+
+            <h1 style="text-align: center"> Find coupons for just about anything, <p id="results"></p></h1>
+            
+        
+            <h6>What are you looking for?</h6>
+            <input type="text" name="coupons" id="coupons"> <br> <br>
+            <h6>Where are you looking?</h6>
+            <input type="text" name="location" id="location"> <br>
+            <h6>Use Current Location?</h6>
+            <input id="Checkbox" type="checkbox" value="1" name="currentLocation"> <br>
+            <input type="submit" onclick="writeUserData()">
+            
+    
+        
+         <script> 
+        // Initialize Firebase
+            var config = {
+                apiKey: "AIzaSyDBAVXzovmFYrgPzauXThUB7kgelXu-7OU",
+                authDomain: "test-3d62a.firebaseapp.com",
+                databaseURL: "https://test-3d62a.firebaseio.com",
+                storageBucket: "test-3d62a.appspot.com",
+                messagingSenderId: "548160024044"
+            };
+          
+            firebase.initializeApp(config);
+            
+            // Get a reference to firebase
+            var database = firebase.database();
+            var users = database.ref("users");
+            var data = database.ref("data");
+            var provider = new firebase.auth.GoogleAuthProvider();
+            var provider = new firebase.auth.FacebookAuthProvider();
+            
+        </script>
+    </body>
+</html>

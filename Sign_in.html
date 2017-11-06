@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" type="image/jpg" href="http://pngimages.net/sites/default/files/ticket-png-image-59113.png">
+        <title>Sign In</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="Sign_up.css">
+        
+        <!---------- Firebase ----->
+        <script src="https://www.gstatic.com/firebasejs/3.6.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/3.6.2/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/3.6.2/firebase-database.js"></script>
+        <script src="Sign_in.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </head> 
+
+    <body>
+        <div id="top-section">
+            <img id="logo" src="logo.png" />
+            <h1>LinkDeals</h1>
+        </div>
+        
+        <div id="container2" class="container col-xl-5 col-lg-6 col-md-6 col-sm-8">
+            <div class="row">
+                <div class="social_button col-xl-8 col-lg-9 col-md-10 col-sm-11 col-11 text-center" onclick="FBsignInWithPopup()">
+                    <img src="images/facebook.png">
+                    Log in with Facebook
+                </div>
+                <div class="social_button col-xl-8 col-lg-9 col-md-10 col-sm-11 col-11 text-center" onclick="signInWithPopup()">
+                    <img style="left:20px" src="images/google.png">
+                    Log in with Google
+                </div>
+            </div>
+            <div class="row" style="align-items: center; justify-content: center">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-5 h-divider"></div>
+                <div class="col-2 or">OR</div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-5 h-divider"></div>
+            </div>
+            
+            <!------- Text Fields --------->
+            <div class="row input-div col-11 col-sm-10">
+                <input id="field2" class="col-12" type="text" placeholder="Enter email" />
+                <img class="icon" src="email.svg" />
+            </div>
+            <div class="row input-div col-11 col-sm-10">
+                <input id="field4" class="col-12" type="password" placeholder="Enter password" />
+                <img class="icon" src="password.svg" />
+            </div>
+            
+            <!------------- Button ------------>
+            <div class="row">
+                <button onclick="signInWithEmailAndPassword()" class="btn col-12 col-sm-10"><span>Log In</span></button>
+            </div>
+        </div>
+        
+        <script> 
+        // Initialize Firebase
+            var config = {
+                apiKey: "AIzaSyDBAVXzovmFYrgPzauXThUB7kgelXu-7OU",
+                authDomain: "test-3d62a.firebaseapp.com",
+                databaseURL: "https://test-3d62a.firebaseio.com",
+                storageBucket: "test-3d62a.appspot.com",
+                messagingSenderId: "548160024044"
+            };
+          
+            firebase.initializeApp(config);
+            
+            // Get a reference to firebase
+            var database = firebase.database();
+            var users = database.ref("users");
+            var provider = new firebase.auth.GoogleAuthProvider();
+            var provider = new firebase.auth.FacebookAuthProvider();
+            
+        </script>
+    </body>
+</html>

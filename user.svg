@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="52px" height="51px" viewBox="0 0 52 51" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="25.08" cy="25.08" r="25.08"></circle>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="50.16" height="50.16" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <path d="M25.0515,28.4618729 C29.424825,28.4618729 33.003,24.8794515 33.003,20.5009365 C33.003,16.1224214 29.424825,12.54 25.0515,12.54 C20.678175,12.54 17.1,16.1224214 17.1,20.5009365 C17.1,24.8794515 20.678175,28.4618729 25.0515,28.4618729 L25.0515,28.4618729 Z" id="path-3"></path>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="15.903" height="15.9218729" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+        <path d="M43.32,40.9866221 C43.32,34.8666522 31.236,31.92 25.08,31.92 C18.924,31.92 6.84,34.8666522 6.84,40.9866221" id="path-5"></path>
+        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="36.48" height="9.06662207" fill="white">
+            <use xlink:href="#path-5"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Sign-up-Page" transform="translate(-441.000000, -481.000000)" stroke-width="6" stroke="#FF9800">
+            <g id="Group-11" transform="translate(397.000000, 212.000000)">
+                <g id="Group">
+                    <g id="Username-+-username-+-Line" transform="translate(28.000000, 252.000000)">
+                        <g id="Rectangle-22-+-username">
+                            <g id="username" transform="translate(13.500000, 14.000000)">
+                                <g id="group" transform="translate(3.420000, 3.420000)">
+                                    <use id="oval" mask="url(#mask-2)" xlink:href="#path-1"></use>
+                                    <use id="shape" mask="url(#mask-4)" xlink:href="#path-3"></use>
+                                    <use id="Path" mask="url(#mask-6)" xlink:href="#path-5"></use>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
