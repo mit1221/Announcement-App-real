@@ -1,0 +1,30 @@
+#title {
+    font-size: 200%;
+    font-weight: bold;
+    padding-top: 100px;
+}
+
+.nav-link {
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    text-align: center;
+    color: white !important;
+}
+
+.navbar-toggler {
+    border: none;
+    outline: none !important;
+}
+
+#background {
+    background-image: url("../images/background.png");
+    position: relative;
+    top: 50px;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 20px;
+    font-size: 40px;
+    color: white;
+}
+
